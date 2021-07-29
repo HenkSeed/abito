@@ -17,3 +17,13 @@ var swiper2 = new Swiper('.mySwiper2', {
 		swiper: swiper,
 	},
 });
+
+const menuBtn = document.querySelector('.menu-button');
+const navbarPanel = document.querySelector('.navbar-panel');
+const menuCloseBtn = document.querySelector('.close-menu');
+menuBtn.addEventListener('click', () => {
+	navbarPanel.classList.add('is-open');
+});
+menuCloseBtn.addEventListener('click', () => {
+	navbarPanel.classList.remove('is-open');
+});
